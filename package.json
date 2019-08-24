@@ -1,0 +1,47 @@
+{
+  "name": "lootcheck",
+  "version": "1.0.0",
+  "description": "Check Your Loot!",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "react-scripts test --env=jsdom",
+    "start": "node index.js",
+    "build": "parcel build index.html",
+    "dev": "parcel build index.html && node index.js"
+  },
+  "keywords": [
+    "test",
+    "driven",
+    "development"
+  ],
+  "author": "Eugene Van Zyl",
+  "license": "ISC",
+  "dependencies": {
+    "bitx": "^1.5.1",
+    "bootstrap": "^4.3.1",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.10",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "sfcookies": "^1.0.2"
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "fetch-mock": "^7.3.9",
+    "jest-cli": "^24.8.0",
+    "parcel-bundler": "^1.12.3",
+    "react-scripts": "^2.1.3",
+    "react-test-renderer": "^16.8.6",
+    "redux-mock-store": "^1.5.3"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ]
+  }
+}
